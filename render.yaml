@@ -3,6 +3,7 @@ services:
     name: sparta-tweets
     env: python
     plan: free
+    workingDir: /opt/render/project
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
